@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IULinux is an Ubuntu-based KDE Linux distribution for focused development and workstation use.">
+  <link rel="icon" href="assets/iulinux-mark.png" type="image/png">
+  <title>IULinux — A Linux workstation in progress</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="overrides.css?v=20261023-9">
+  <link rel="stylesheet" href="branding.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="IULinux home"><img class="brand-image" src="assets/iulinux-mark.png" alt=""><span>IULinux</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#features">Features</a><a href="#profiles">Profiles</a><a href="#screenshots">Screenshots</a><a href="#download">Download</a><a href="#faq">FAQ</a><a href="handbook.html">Handbook</a>
+      <a class="nav-github" href="https://github.com/IrfanUruchi/IULinux" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> IULinux 0.1 Alpha 1</p>
+        <h1>A KDE Plasma workstation built for practical Linux work.</h1>
+        <p class="lede">IULinux 0.1 Alpha 1 combines Ubuntu 26.04 LTS, KDE Plasma, IULinux Settings, a PackageKit-backed App Store, signed IULinux updates and opt-in workstation profiles.</p>
+        <div class="hero-actions"><a class="button button-primary" href="https://releases.irfanuruchi.in/IULinux-0.1-alpha1-amd64.iso">Download ISO <span aria-hidden="true">↘</span></a><a class="button button-secondary" href="handbook.html">Open Handbook <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <figure class="hero-showcase"><img src="assets/screenshots/01-desktop.png" alt="IULinux desktop with the branded dark workspace, bottom panel and application window" fetchpriority="high"><figcaption><span>IULinux Desktop</span><span>Authentic project capture</span></figcaption></figure>
+    </section>
+
+    <section class="signal-strip"><div><strong>Ubuntu 26.04 LTS base</strong><span>amd64 / Resolute</span></div><div><strong>KDE Plasma</strong><span>IULinux desktop integration</span></div><div><strong>Signed updates</strong><span>Official APT archive</span></div></section>
+
+    <section id="features" class="section-wrap content-section">
+      <div class="section-intro"><p class="eyebrow">The system</p><h2>IULinux Desktop</h2><p>These are components of the current Alpha build. Some features depend on the hardware and available system services.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="card-index">01</span><h3>System visibility</h3><p>Settings reports displays, audio, input, storage, connectivity, security, battery and provider state from the running system.</p><span class="badge badge-built">Implemented</span></article>
+        <article class="feature-card"><span class="card-index">02</span><h3>Guarded software</h3><p>The App Store searches local AppStream metadata and previews PackageKit actions before authorization-gated installation or removal.</p><span class="badge badge-built">Implemented</span></article>
+        <article class="feature-card"><span class="card-index">03</span><h3>Authenticated updates</h3><p>The IULinux repository package pairs a dedicated keyring with a Signed-By source so APT can verify IULinux packages.</p><span class="badge badge-tested">Release component</span></article>
+        <article class="feature-card"><span class="card-index">04</span><h3>Workstation profiles</h3><p>23 manifest-backed add-ons cover development, media, design, engineering, gaming and authorized security research.</p><span class="badge badge-experimental">Optional</span></article>
+      </div>
+    </section>
+
+    <section id="profiles" class="dark-section"><div class="section-wrap split-section"><div><p class="eyebrow eyebrow-green">Optional profiles</p><h2>Install the workstation tools you need.</h2><p>Optional package profiles cover development, engineering, media, design, gaming, and authorized security research. They are not installed by default.</p></div><div class="profile-list"><div><span>COMPUTE</span><strong>AI, Cloud / DevOps and Hermes setup tools</strong></div><div><span>BUILD</span><strong>Mobile, Embedded and FPGA / Digital Design</strong></div><div><span>MEDIA</span><strong>Audio, video, photography and transcoding</strong></div><div><span>DESIGN</span><strong>Painting, image, vector, publishing, CAD and 3D</strong></div><div><span>ARCH</span><strong>Parametric design and interior planning</strong></div><div><span>GAME</span><strong>Gaming and classic emulation add-ons</strong></div><div><span>SEC</span><strong>Authorized penetration and Android research</strong></div></div></div></section>
+
+    <section id="screenshots" class="section-wrap content-section"><div class="section-intro"><p class="eyebrow">Screenshots</p><h2>Interfaces from the current IULinux build.</h2><p>These captures show the desktop, App Store, Settings, profiles, workspace and power/performance controls as they exist in the project.</p></div><div class="screenshot-grid screenshot-gallery"><figure class="screenshot-feature"><img src="assets/screenshots/01-desktop.png" alt="IULinux desktop with branded dark workspace and application window"><figcaption><strong>IULinux Desktop</strong><span>Plasma desktop and panel layout</span></figcaption></figure><figure><img src="assets/screenshots/02-appstore.png" alt="IULinux App Store interface showing application categories and packages"><figcaption><strong>Applications and Software Management</strong><span>App Store catalog and package actions</span></figcaption></figure><figure><img src="assets/screenshots/03-settings.png" alt="IULinux Settings interface showing system controls and status panels"><figcaption><strong>System Settings</strong><span>IULinux-specific controls</span></figcaption></figure><figure><img src="assets/screenshots/04-profiles.png" alt="IULinux Profiles interface showing optional workstation profiles"><figcaption><strong>Optional Workstation Profiles</strong><span>Installable profile sets</span></figcaption></figure><figure><img src="assets/screenshots/05-workspace.png" alt="IULinux workspace view showing desktop layout and application organization"><figcaption><strong>Workspace</strong><span>Desktop workflow and applications</span></figcaption></figure><figure><img src="assets/screenshots/06-power-performance.png" alt="IULinux power and performance controls interface"><figcaption><strong>Power and Performance</strong><span>Battery, power and performance views</span></figcaption></figure></div></section>
+
+    <section id="download" class="download-section"><div class="section-wrap download-inner"><div><p class="eyebrow eyebrow-green">Downloads and release information</p><h2>Download IULinux 0.1 Alpha 1</h2><p>Download <a href="https://releases.irfanuruchi.in/IULinux-0.1-alpha1-amd64.iso">IULinux-0.1-alpha1-amd64.iso</a> from the official release host. It is 2,952,669,184 bytes. The matching <a href="https://releases.irfanuruchi.in/IULinux-0.1-alpha1-amd64.iso.sha256">SHA-256 file</a> is published beside it. The ISO still carries the development volume label <code>IULINUX_DEV</code>.</p></div><div class="release-card"><span class="release-kicker">Release status</span><strong>Alpha 1</strong><span class="release-status">Public artifact · amd64</span><span class="release-rule"></span><a class="button button-primary" href="https://releases.irfanuruchi.in/IULinux-0.1-alpha1-amd64.iso">Download ISO ↘</a><a class="text-link text-link-light" href="handbook.html#part-ii-download-verification-and-installation">Verify and install ↗</a></div></div></section>
+
+    <section id="docs" class="section-wrap content-section lower-grid"><div><p class="eyebrow">Documentation</p><h2>Handbook and release documentation</h2><p>Read the HTML Handbook online or download the PDF. It covers installation, daily use, IULinux Settings, profiles, package management, troubleshooting, and the maintainer workflow.</p></div><div class="link-stack"><a href="handbook.html"><span>Read the HTML Handbook</span><span>Open ↗</span></a><a href="assets/downloads/IULinux-0.1-Alpha-Handbook.pdf"><span>Download Handbook (PDF)</span><span>PDF ↘</span></a><a href="https://irfanuruchi.github.io/iulinux-archive/" target="_blank" rel="noreferrer"><span>Signed APT archive</span><span>Open ↗</span></a><a href="https://github.com/IrfanUruchi/IULinux" target="_blank" rel="noreferrer"><span>Source code</span><span>GitHub ↗</span></a></div></section>
+    <section id="faq" class="section-wrap content-section"><div class="section-intro"><p class="eyebrow">FAQ</p><h2>Questions about Alpha 1.</h2></div><div class="link-stack"><details><summary>Can I download the ISO now?</summary><p>Yes. The public amd64 artifact and matching checksum are available in the Download section. Start with <a href="handbook.html#part-ii-download-verification-and-installation">verification and installation</a>.</p></details><details><summary>What hardware is supported?</summary><p>The target is amd64. There is no universal compatibility matrix; graphics, firmware, Secure Boot, NVIDIA and power behavior must be tested on the target machine.</p></details><details><summary>Is Secure Boot universal?</summary><p>No. Alpha 1 uses Ubuntu signed boot components and a specific Calamares EFI policy. Read the <a href="handbook.html#part-vii-updates-security-and-troubleshooting">security and troubleshooting</a> chapter before relying on it.</p></details><details><summary>Where are updates published?</summary><p>The independent signed archive is linked in the <a href="handbook.html#part-v-app-store-and-package-management">package management</a> chapter.</p></details></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="section-wrap footer-inner"><a class="brand" href="#top"><img class="brand-image" src="assets/iulinux-mark.png" alt=""><span>IULinux</span></a><p>Open development for a focused Linux workstation.</p><a href="handbook.html">Handbook</a><a href="https://github.com/IrfanUruchi/IULinux" target="_blank" rel="noreferrer">GitHub ↗</a></div></footer>
+  <script src="script.js?v=20261023-visual"></script>
+</body>
+</html>
